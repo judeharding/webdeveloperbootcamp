@@ -20,3 +20,17 @@ p{
 input{
     border: 3px solid red;
 }
+/* WAYS TO SELECT ELEMENTS */
+    /* element selector = li{} */
+    /* id selector = #xxx{} */
+    /* class selector = .xxx{} */
+    /* star selector = *{}  //selects each element on a page */
+    /* decendent selector = ul li a{} // selects all the anchor tags nested in li's */
+    /* adjecent selector = h4 + li // not nested but next to.  all the li's after h4 */
+    /* attribute selector = input[type="text"]{} //maybe change the background of all text fields blue */
+    /* nth of type selector = ul:nth-of-type(3){} // maybe change the font of the 3rd ul */
+
+/* specifity */
+    /* type selectors are the LEAST specific */
+    /* class, attribute and pseudo class selectors are a little more specific */
+    /* id selectors are more specific */
