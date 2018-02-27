@@ -21,6 +21,65 @@ margin: 0 auto;
 margin: 50px 20px;
 }
 
+table{
+    width: 50%;
+    /* border: 2px solid red; */
+}
+
+td{
+    width: 100px;
+    height: 100px;
+}
 
 
+#ul{
+    border-right: 1px solid green;
+    border-bottom: 1px solid green;
+    margin: 0px;
+}
 
+#um{
+    /* border-right: 1px solid green; */
+    border-bottom: 1px solid green;
+    margin: 0px;
+}
+
+#ur{
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
+    margin: 0px;
+}
+
+#mr{
+    border-left: 1px solid green;
+    /* border-bottom: 1px solid green; */
+    margin: 0px;
+}
+
+#mm{
+    /* border: 1px solid green; */
+    margin: 0px;
+}
+
+#ml{
+    border-right: 1px solid green;
+    margin: 0px;
+}
+
+
+#ll{
+    border-right: 1px solid green;
+    border-top: 1px solid green;
+    margin: 0px;
+}
+
+#lm{
+    border-top: 1px solid green;
+    margin: 0px;
+}
+
+#lr{
+    border-left: 1px solid green;
+    border-top: 1px solid green;
+    margin: 0px;
+}
