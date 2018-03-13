@@ -1,0 +1,48 @@
+/* testing css connection with html
+body {
+    background-color: purple;
+} */
+
+body {
+    /* free background image */
+    background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467);
+    /* re-adjust the background image size to cover will shrink a pic to to fit */
+    background-size: cover;
+    background-position: center;
+}
+
+body,
+/* using percentages instead of px makes things more responsive */
+html {
+    /* making the width and height 100% uses the ENTIRE html document window. */
+    width: 100%;
+    height: 100%;
+    font-family: "Lato";
+    /* makes ALL text white -- except text with more "specific" classes */
+    color: white;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 5em;
+}
+
+
+.content{
+	padding-top: 25%;
+	text-align: center;
+
+    /* testing shadows - 1st px is the x axis, 2nd is y axis, 3rd is blur radius, 4th is the transparent color
+    text-shadow: 0px 5px 9px red; */
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+hr {
+    /* without setting the width, the hr would go edge to edge of the container */
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    /* gives the hr a "shadow" */
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
