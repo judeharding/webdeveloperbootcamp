@@ -27,3 +27,32 @@ METHODS
     console.log(); // prints to the console only that can be stored in a var.  var name = prompt ("enter name")
     comments
     clear() // methods have() after them that come with js
+
+LOGIC & LOOPS
+Boolean logic evaluates to true or false.
+< > <= >= == === != !==
+=== & !== deal with coercion does value AND datatype
+
+Logic Operators
+&& //AND
+|| // or
+! // not
+
+Truthy & Falsey
+	falsey values = false, 0, "", null, undefined, Nan
+	EVERYTHING ELSE IS true
+
+CONDITIONALS
+		if (true) {
+
+		}
+		-----
+		if (true) {
+
+		} else if (true) {
+
+		}
+		-----
+		else {
+			
+		}
