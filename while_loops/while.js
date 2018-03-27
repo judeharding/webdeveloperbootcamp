@@ -1,7 +1,8 @@
 // alert("testing from whilejs");
 
-// print all nubers between 10 and 19
-var counter = 10;
+// print all nubers between -10 and 19
+console.log("print all nubers between -10 and 19");
+var counter = -10;
 
 while (counter < 20) {
     console.log("counter is " + counter);
@@ -9,6 +10,7 @@ while (counter < 20) {
 }
 
 // print all even numbers between 10 and 40
+console.log("print all even numbers between 10 and 40");
 var evens = 10;
 
 while (evens < 41) {
@@ -18,6 +20,7 @@ while (evens < 41) {
 }
 
 // print all odd numbers between 300 and 333
+console.log("print all odd numbers between 300 and 333");
 var odds = 300;
 
 while (odds < 334) {
@@ -28,7 +31,7 @@ while (odds < 334) {
 }
 
 // print all numbers divisible by 5 and 3 between 5 and 50
-
+console.log("print all numbers divisible by 5 and 3 between 5 and 50");
 var x = 5
 
 while (x < 50) {
@@ -38,5 +41,14 @@ while (x < 50) {
         console.log(" x is divisible by 3 " + x);
     }
 
+    x = x + 1;
+}
+console.log("OR...  ");
+var x = 5
+
+while (x <= 50) {
+    if (x % 5 === 0 && x % 3 === 0) {
+        console.log("x is divisible by 5 AND 3  " + x);
+    }
     x = x + 1;
 }

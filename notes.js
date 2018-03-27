@@ -54,7 +54,17 @@ CONDITIONALS
 		}
 		-----
 		else {
-			
+
 		}
 
-WHILE LOOPS
+WHILE LOOPS & FOR LOOPS.
+
+both can have if statements within them
+while loops while stmt with the counter within the braces
+for LOOPS for stmt with the counter in the conditional
+	for(initialize; condition; counter)
+
+				for (var i = 0; i < array.length; i++) {
+					array[i]
+				}
+for loops are shorter than while loops AND the variable init only exists inside the for loops
