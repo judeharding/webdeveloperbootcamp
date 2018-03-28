@@ -112,10 +112,40 @@ NOTES for JS primatives
 	HIGHER ORDER FUNCTIONS
 	functions that take functions as an argument or return other FUNCTIONS
 
-	ex
+		ex
 			function sing(){
 				console.log("twinkle, twinkle...");
 				console.log("little star...");
 			}
 
 			setInterval(sing, 2000); // setinterval takes 2 arguments the function name and time in ms.
+
+	ARRAYS
+	The FIRST data structure that stores data using js -  a group of related data
+	(maybe a good way of storing records - flat file)
+
+	var friends = ["mike", "marie", "carol"];  //0 indexed, comma separated list
+
+	arrays created either
+		var xxx = [];
+		OR
+		var xxx = new Array();
+	they can hold all kinds of data, numbers, boolean, string, null
+	they have a LENGTH property con.log(arrayname[arrayname.length]);  // will return UNDEFINED b/c the index number not the  actual number
+
+	ARRAY METHODS
+		push - ADDS to an array at the END - arrayname.push("xxx");
+		pop - REMOVES the LAST element in an array - arrayname.pop();
+		unshift - ADDS to an array at the BEGINNING - arrayname.unshift("xxx");
+		shift - REMOVES from the BEGINNING of an array  - arrayname.shift();
+		indexof - takes an argument and tries to find it in the array and return its index number - arrayname.indexOf("xxx"); // if multiple, returns the 1st instance - if not present, -1 returned
+		slice - used to copy parts of an array - var yyy = arrayname.slice (1, 3); // starts at 1 and goes to 3 but not includes 3.  the original array remains the same
+
+	NESTED ARRAYS
+			var friendGroups = [
+				["marie", "gwen", "hind"],
+				["carol", "bkt", "leigh"],
+				["peggy", "bobbie", "joan"]
+			];
+
+			console.log(friendGroups[2][0]); // will return peggy
