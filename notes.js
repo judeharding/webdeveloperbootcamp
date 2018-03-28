@@ -101,3 +101,21 @@ NOTES for JS primatives
 		ONLY ONE thing is returned - if you don't specify a return, you will get UNDEFINED
 			you can have multiple returns but only the first one is used (unless there is an if statment)
 		ONCE you have a RETURN, nothing else happens after the return in that functions
+
+
+	SCOPE
+		variables within a function are different than outside the functions
+		variables outside of a function are still accessable inside the function but its not true the other way arund
+		inside the function can change the OUTSIDE variables unless you have VAR'd the variable INSIDE the function.
+		vars created in a function are not accessable to other functions unless you are overwriting an outer var with a function that has been called
+
+	HIGHER ORDER FUNCTIONS
+	functions that take functions as an argument or return other FUNCTIONS
+
+	ex
+			function sing(){
+				console.log("twinkle, twinkle...");
+				console.log("little star...");
+			}
+
+			setInterval(sing, 2000); // setinterval takes 2 arguments the function name and time in ms.
