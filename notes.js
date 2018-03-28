@@ -149,3 +149,12 @@ NOTES for JS primatives
 			];
 
 			console.log(friendGroups[2][0]); // will return peggy
+
+
+
+
+
+// JQUERY $('document').ready() // can be replaced with
+// 		window.setTimeout(function() {
+// 		  // put all of your JS code from the lecture here
+// 		}, 500);
