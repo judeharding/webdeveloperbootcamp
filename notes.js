@@ -158,3 +158,11 @@ NOTES for JS primatives
 // 		window.setTimeout(function() {
 // 		  // put all of your JS code from the lecture here
 // 		}, 500);
+
+
+	ARRAYS FOREACH
+	can be used instead of a for loop
+		var colors = ["red", "blue", "yellow", "green"];
+		for (var i = 0; i < colors.length; i++) {
+			console.log(colors[i]); 
+		}
