@@ -164,5 +164,11 @@ NOTES for JS primatives
 	can be used instead of a for loop
 		var colors = ["red", "blue", "yellow", "green"];
 		for (var i = 0; i < colors.length; i++) {
-			console.log(colors[i]); 
+			console.log(colors[i]);
 		}
+	// OR
+		var colors = ["red", "blue", "yellow", "green"];
+		colors.forEach(function(color){
+			console.log(color);
+		}
+	);
