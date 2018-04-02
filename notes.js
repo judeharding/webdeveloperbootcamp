@@ -171,4 +171,4 @@ NOTES for JS primatives
 		colors.forEach(function(color){
 			console.log(color);
 		}
-	);
+		);
