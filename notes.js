@@ -69,7 +69,7 @@ NOTES for JS primatives
 	for loops are shorter than while loops AND the variable init only exists inside the for loops
 
 
-	FUNCTIONS
+	FUNCTIONS - functions DO things... and RETURN answers AND IS REUSABLE WITH DIFFERENT INCOMING INFO
 	Declarations vs Expressions
 	declarations  = function funcName(){
 						// some code
