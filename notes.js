@@ -1,12 +1,13 @@
-NOTES for JS primatives
+NOTES for JS
 
-	// cool google logo expand
-	var logo = document.querySelector("#hplogo");
-	setInterval(function(){
-		logo.width+=5;
-	}, 100)
+// cool google logo expand
+// var logo = document.querySelector("#hplogo");
+// setInterval(function(){
+// 	logo.width+=5;
+// }, 100)
 
 
+PRIMATIVES
 	5 primitive datatypes
 		numbers - whole, fractional, negative,  modulus(remainder)
 		strings - "text" or 'text' or "hi " + "jude"
@@ -27,7 +28,7 @@ NOTES for JS primatives
 	    comments
 	    clear() // methods have() after them that come with js
 
-	LOGIC & LOOPS
+LOGIC & LOOPS
 	Boolean logic evaluates to true or false.
 	< > <= >= == === != !==
 	=== & !== deal with coercion does value AND datatype
@@ -120,7 +121,7 @@ NOTES for JS primatives
 
 			setInterval(sing, 2000); // setinterval takes 2 arguments the function name and time in ms.
 
-	ARRAYS
+ARRAYS - a data structure taking data in a list and binding it via indexes
 	The FIRST data structure that stores data using js -  a group of related data
 	(maybe a good way of storing records - flat file)
 
@@ -172,3 +173,36 @@ NOTES for JS primatives
 			console.log(color);
 		}
 		);
+
+
+OBJECTS - another data structure (NOT A LIST but accessed via key/value pairs)
+
+	var xxx = {
+		key: "value",
+		key: "value"
+	};
+
+	// objects don't have any built-in order, unlike arrays
+	2 ways to extract data from an object
+	console.log(xxx["key"]);
+	OR
+	console.log(xxx.key); (dot notation - BUT you can not use this if the property starts with a number, space or variable name)
+
+	 INITIALIZE OBJECTS
+	1.) // empty object then add key/values
+	var xxx = {};
+	xxx.name = "mike";
+	xxx.city = "clt";
+
+	2.) // all at once
+	var xxx = {
+		name: "mike",
+		city: "clt"
+	}
+
+	3.) // create a new empty object
+	var xxx = new OBJECT();
+	xxx.name = "mike";
+	xxx.city = "clt";
+
+	AND you can have objects within other OBJECTS
