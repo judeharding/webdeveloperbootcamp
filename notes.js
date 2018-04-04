@@ -206,3 +206,23 @@ OBJECTS - another data structure (NOT A LIST but accessed via key/value pairs)
 	xxx.city = "clt";
 
 	AND you can have objects within other OBJECTS
+
+	JS METHODS ARE FUNCTIONS INSIDE AN OBJECT.  so an object can have properties OR methods OR both
+
+	var obj = {
+		key1: value, // property
+		key2: "Value", // property
+		key3: ["xxx", "xxx"], //array
+		meth: funct(x, y){ //method
+			return x + y;
+		}
+	}
+	obj.meth(5, 5); //returns 10
+
+	NAMESPACING is when you have a function that can have different returns depending on the object.
+	 so the speak "dog methods" can be reused by dogSpace and the speak "cat methods" can be reused by catSpace
+
+
+	***** NOTE ***** UNDERSCORE.JS is a library of functions that we can use
+
+	THIS is a keyword
