@@ -161,7 +161,7 @@ ARRAYS - a data structure taking data in a list and binding it via indexes
 // 		}, 500);
 
 
-	ARRAYS FOREACH (rewatch #137)
+	ARRAYS FOREACH (rewatch #137)  // forEach can ONLY be used in an ARRAY
 	can be used instead of a for loop
 		var colors = ["red", "blue", "yellow", "green"];
 		for (var i = 0; i < colors.length; i++) {
@@ -226,7 +226,7 @@ OBJECTS - another data structure (NOT A LIST but accessed via key/value pairs)
 	// ***** NOTE ***** UNDERSCORE.JS is a library of functions that we can use
 
 
-THE DOM -- interface between the js and html and css
+THE DOM -- interface between the js and html and css  EVERYTHING IS A NODE
 
 	to see any pages' DOM, console.dir(document);
 
@@ -257,3 +257,69 @@ THE DOM -- interface between the js and html and css
 		var xxx = document.getElementByID("idname");
 		console.dir(xxx);  //will list ALL the properties available
 		console.dir(xxx[0]);  //used if it returns more than one node for getElementsByClassName
+
+
+		SELECTION PROCESS
+		document.getElementByID("first");
+		document.getElementsByClassName("special")[0];
+		document.getElementsByTagName("p")[0];
+		document.querySelector("#first");
+		document.querySelectorAll("special")[0];
+		document.querySelector("h1 + p"); // gives you the first paragraph after an h1
+
+		MANIPULATION PROCESS
+		var tag = document.getElementByID("first");
+
+		tag.style.color = "blue";  // EVERYTHING ON THE RIGHT OF THE = IS A STRING B/C it is JS not CSS
+
+		2 ways of grabbing/selecting the element content
+		tag.textContent // will return all of the text in the tag var but not include the htmltags
+		tag.textContent = "blah blah"; //changes the text in the HTMLvariable of tag
+		or
+		tag.innerHTML  //returns all of the stuff in the HTML including any structure like <strong> or <li> or <a>
+
+		ATTRIBUTES -- things like src or href
+
+		var xxx = document.getElementByID("first")
+		xxx.getAttribute("href"); // will log the href in the var xxx
+		xxx.setAttribute("href", "http://www.mmt.com"); // changes the href in the var xxx
+		xxx.textContent = "link to mmt"; // changes the text in the var // xxx
+
+		google demo
+
+		var links = document.getElementsByTagName("a");
+
+		for (var i = 0; i < links.length; i++) {
+			console.log(links[i].getAttribute("href")); // list of all the links
+			links[i].setAttribute("href", "http://www.bing.com"); // changes all of the links to bing
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		.
