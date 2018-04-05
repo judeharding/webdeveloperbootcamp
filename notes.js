@@ -223,6 +223,25 @@ OBJECTS - another data structure (NOT A LIST but accessed via key/value pairs)
 	 so the speak "dog methods" can be reused by dogSpace and the speak "cat methods" can be reused by catSpace
 
 
-	***** NOTE ***** UNDERSCORE.JS is a library of functions that we can use
+	// ***** NOTE ***** UNDERSCORE.JS is a library of functions that we can use
 
-	THIS is a keyword
+
+THE DOM -- interface between the js and html and css
+
+	to see any pages' DOM, console.dir(document);
+
+	The process of DOM manipulatioin is SELECT THEN MANIPULATE
+		so you write a selector then you apply styles -- all thru js
+		ex	var h1 = document.querySelector("h1");  // selects
+			h1.style.color = "pink";  // manipulates
+		or
+			var body = document.querySelector("body");
+			var isBlue = false;
+
+			setInterval(function(){
+				if (isBlue) {
+					body.style.background = "white";
+				} else {
+					body.style.background = "#3498db";
+				}
+			}, 1000);
