@@ -244,4 +244,16 @@ THE DOM -- interface between the js and html and css
 				} else {
 					body.style.background = "#3498db";
 				}
+				isBlue = !isBlue; // changes the background from false to true
 			}, 1000);
+
+	document.getElementByID();  // returns a single element
+	document.getElementsByClassName();  // it returns a node list (NOT an array)
+	document.getElementsByTagName(); // all HTML tags
+	document.querySelector();  // its a CSS-style selector that returns only the FIRST match
+	document.querySelectorAll(); // its a CSS-style selector that returns ALL the matches
+
+	want to see all the properties available to an element?
+		var xxx = document.getElementByID("idname");
+		console.dir(xxx);  //will list ALL the properties available
+		console.dir(xxx[0]);  //used if it returns more than one node for getElementsByClassName
