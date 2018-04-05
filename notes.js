@@ -294,6 +294,24 @@ THE DOM -- interface between the js and html and css  EVERYTHING IS A NODE
 			links[i].setAttribute("href", "http://www.bing.com"); // changes all of the links to bing
 		}
 
+	DOM EVENTS - making things interactive
+
+	The process?
+		1.)  select an element - btn click, hover, keypress, mouseover, etc
+				var btn = document.querySelector("button");
+		2.)  add an event listener
+				button.addEventListener("click", function(){
+					console.log("someone clicked the button");
+				});
+
+	var lis = document.querySelectorAll("li");
+
+	for (var i = 0; i < lis.length; i++) {
+		lis[i].addEventListener("click", function(){ // this is an annomous function b/c we only use it here.  if we could use it somewhere else, we would write a separate named function and call it here.
+			this.style.color = "pink"
+		});
+	}
+
 
 
 
