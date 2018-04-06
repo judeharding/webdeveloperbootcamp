@@ -14,7 +14,7 @@ console.log("test from jtogg");
 //         isPurple = !isPurple; // negates the current background
 //     });
 
-
+//refactored
 var btn = document.querySelector("button");
 
 btn.addEventListener("click", function(){ // this is an annomous function b/c we only use it here.  if we could use it somewhere else, we would write a separate named function and call it here.
