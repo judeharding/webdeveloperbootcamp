@@ -13,3 +13,15 @@ for (var i = 0; i < lis.length; i++) {
         this.classList.toggle("done");
     });
 }
+
+// for counting all the events on the page - https://developer.mozilla.org/en-US/docs/Web/Events
+document.querySelectorAll("table"); // show all of the tables.  are those the tables we want to count?  yes.
+
+var trs = document.querySelectorAll("tr");
+
+for (var i = 0; i < trs.length; i++) {
+    // tds[i]
+    console.log(trs.length - document.querySelectorAll("table").length); // to remove the headers
+}
+// for use on console only
+document.querySelectorAll("tr").length - document.querySelectorAll("table").length
