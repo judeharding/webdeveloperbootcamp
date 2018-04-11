@@ -1,4 +1,4 @@
-console.log("rgb js");
+// console.log("rgb js");
 
 var colors = [
     "rgb(255, 0, 0)",
