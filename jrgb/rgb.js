@@ -1,6 +1,6 @@
 // console.log("rgb js");
 
-// var colors = [  psuedo code
+// var colors = [  //psuedo code
 //     "rgb(255, 0, 0)",
 //     "rgb(255, 255, 0)",
 //     "rgb(0, 255, 0)",
@@ -10,12 +10,16 @@
 // ]
 
 var colors = generateRandomColors(6);
-
+var pickedColor;
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
+
+
+
+
 
 colorDisplay.textContent = pickedColor;
 
@@ -49,7 +53,7 @@ function changeColors(color){
 }
 
 function pickColor(){
-    // Math.floor(Math.random() *6 + 1);
+    // Math.floor(Math.random() * 6 + 1);
     var random = Math.floor(Math.random() * colors.length);
     return colors[random];
 }
