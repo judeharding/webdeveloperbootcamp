@@ -11,7 +11,7 @@ body {
 }
 
 #container {
-    margin: 0 auto;
+    margin: 0 auto; /* centers the div  */
     max-width: 600px;
 }
 
@@ -19,12 +19,8 @@ h1 {
     color: white;
 }
 
-/* span {
-    color: white;
-} */
-
 #stripe {
-	background-color: white;
+	background: white;
 	height: 30px;
 	text-align: center;
 	color: black;
