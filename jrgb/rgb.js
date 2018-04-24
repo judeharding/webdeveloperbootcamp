@@ -8,8 +8,8 @@
 //     "rgb(0, 0, 255)",
 //     "rgb(255, 0, 255)"
 // ]
-
-var colors = generateRandomColors(6);
+var numberOfSquares = 6;
+var colors = generateRandomColors(numberOfSquares);
 // var pickedColor;
 var squares = document.querySelectorAll(".square");
 var pickedColor = pickColor();
@@ -17,11 +17,46 @@ var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
+var easyBtn = document.querySelector("#easyBtn");
+var hardBtn = document.querySelector("#hardBtn");
 
+
+
+easyBtn.addEventListener("click", function(){
+    hardBtn.classList.remove("selected");
+    easyBtn.classList.add("selected");
+    numberOfSquares = 3;
+    colors = generateRandomColors(numberOfSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    // turn off the bottom 3 color blocks
+    for (var i = 0; i < squares.length; i++) {
+        if (colors[i]) {
+            squares[i].style.backgroundColor = colors[i];
+        } else {
+            squares[i].style.display = "none";
+        }
+
+    }
+});
+
+hardBtn.addEventListener("click", function(){
+    easyBtn.classList.remove("selected");
+    hardBtn.classList.add("selected");
+    numberOfSquares = 6;
+    colors = generateRandomColors(numberOfSquares);
+    pickedColor = pickColor();
+    colorDisplay.textContent = pickedColor;
+    // turn off the bottom 3 color blocks
+    for (var i = 0; i < squares.length; i++) {
+            squares[i].style.backgroundColor = colors[i];
+            squares[i].style.display = "block";
+        }
+});
 
 resetButton.addEventListener("click", function(){
     // generate all new colors
-    colors = generateRandomColors(6);
+    colors = generateRandomColors(numberOfSquares);
     // pick new randome color
     pickedColor = pickColor();
     // change color display to match new picked colors
@@ -67,7 +102,7 @@ function changeColors(color){
 }
 
 function pickColor(){
-    // Math.floor(Math.random() * 6 );
+    // Math.floor(Math.random() * 6 + 1);
     var random = Math.floor(Math.random() * colors.length);
     return colors[random]; // to access one of the squares
 }
