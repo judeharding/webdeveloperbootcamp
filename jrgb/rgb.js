@@ -67,7 +67,7 @@ function changeColors(color){
 }
 
 function pickColor(){
-    // Math.floor(Math.random() * 6 + 1);
+    // Math.floor(Math.random() * 6 );
     var random = Math.floor(Math.random() * colors.length);
     return colors[random]; // to access one of the squares
 }
