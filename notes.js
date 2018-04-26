@@ -335,6 +335,8 @@ JQUERY
 
 		it is best to either write your own js or if you opt for the CDN jquery file, you can download them and put them in a LIB folder in your project
 
+	in either case, for DOM manipulation, you FIRST select, THEN manipulate
+		$("selectorGoesHere")
 
 
 
