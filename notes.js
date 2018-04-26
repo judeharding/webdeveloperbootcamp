@@ -327,7 +327,14 @@ JQUERY
 			you can do it in vanilla
 			performance is slower
 			lots of dependencies
-			
+
+	2 ways to add jquery:
+		<script type="text/javascript" src="cccc.js"></script> // locally
+		OR
+		<script type="text/javascript" src="https://code.jquery.com/jquery-e.1.4.js"></script>  // cdn hosted copy
+
+		it is best to either write your own js or if you opt for the CDN jquery file, you can download them and put them in a LIB folder in your project
+
 
 
 
