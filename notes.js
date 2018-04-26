@@ -312,9 +312,22 @@ THE DOM -- interface between the js and html and css  EVERYTHING IS A NODE
 		});
 	}
 
+JQUERY
+	DOM manipulation library (code that someone else wrote but we can use)
 
+	debate
+		for jquery
+			shorter code for common methods
+			easy to use
+			cross platform support
+			ajax
 
-
+		against
+			dom api not "broken"
+			you can do it in vanilla
+			performance is slower
+			lots of dependencies
+			
 
 
 
