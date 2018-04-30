@@ -349,10 +349,13 @@ JQUERY
 	$("li a");
 
 	to manipulate, you can add .css(property, value) to the end of a selector like:
-	$("img").css("border", "2px solid red");
+	$("img").css("border", "2bpx solid red");
 	$(".sale");
 	$("#bonus");
 	$("li a");
+
+	All references to CDN libraries are put in the HEAD in a script tag.
+		then you can put a reference to the local js file before the close of the body tag.
 
 
 
