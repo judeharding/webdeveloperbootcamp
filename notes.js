@@ -339,8 +339,20 @@ JQUERY
 		$("selectorGoesHere")
 
 
+	Same mantra -- SELECT then MANIPULATE
 
+	$(" selectorgoeshere ") = document.querySelectorAll(" xxx ")
+	these below are all selectors :
+	$("img");
+	$(".sale");
+	$("#bonus");
+	$("li a");
 
+	to manipulate, you can add .css(property, value) to the end of a selector like:
+	$("img").css("border", "2px solid red");
+	$(".sale");
+	$("#bonus");
+	$("li a");
 
 
 
