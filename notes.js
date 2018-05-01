@@ -359,7 +359,15 @@ JQUERY
 
 
 
-
+	Common JQ methods
+		val
+		text
+		attr
+		html
+		add
+		remove
+		toggle
+		
 
 
 
