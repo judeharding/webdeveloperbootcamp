@@ -409,7 +409,28 @@ JQUERY
 	});
 
 
-
+TODO
+	html will hold:
+		page structure
+		folder structures
+	jquery will hold:
+		.on()
+		.keypress()
+		fades and slides
+		selecting
+		.parent()
+		.append() can take a STRING of html and append it 
+		creating new elements
+		event delegations
+	css will hold:
+		paddings
+		font
+		floats
+		margins
+		fonatawesome
+		box shadows
+		gradients
+		transitions
 
 
 
