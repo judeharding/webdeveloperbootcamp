@@ -367,16 +367,46 @@ JQUERY
 		add
 		remove
 		toggle
-		
 
+	99% of the time, you can use these 3 common event methods
+	.click()
+	.keypress() or keydown() or keyup() //key press is best b/c it allows for SHIFT
+	.on()
 
+	// click method adds an event listener to ALL buttons
+		$('button').click(function(){
+			alert("someone clicked a button");
+		});
 
+	we can add an event listener to one element
+		or a collection of elements
+		and if we want to refer to an element that called, we use $(this).method
 
+	// keypress method adds an event listener to the input field
+	$("input[type='text']").keypress(function(){
+		console.log('you pressed a key');
+	});
+	or
+	$("input[type='text']").keypress(function(event){
+		if (event) {
+			console.log(event.which);
+		}
+		if (event.which === 13) {
+			console.log("you hit ENTER");
+		}
+	});
 
+	// on method is addEventListener but shorthand
+	$('h1').on('click', function(){
+		$("h1").css("color", "purple") // will change ALL h1's
+		$(this).css("color", "purple") // will change only the h1 clicked
+	});
 
+	or
 
-
-
+	$('button').on('mouseenter', function(){
+		$(this).css("font-weight", "bold") // will change btn text on enter
+	});
 
 
 
