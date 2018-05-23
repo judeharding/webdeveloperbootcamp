@@ -1,0 +1,16 @@
+body {
+    background-color: MediumPurple;
+    /* connected css */
+}
+
+#container {
+    /* background-color: lightgray; */
+    width: 360px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
