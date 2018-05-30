@@ -419,7 +419,7 @@ TODO
 		fades and slides
 		selecting
 		.parent()
-		.append() can take a STRING of html and append it 
+		.append() can take a STRING of html and append it
 		creating new elements
 		event delegations
 	css will hold:
@@ -431,6 +431,8 @@ TODO
 		box shadows
 		gradients
 		transitions
+
+#203 
 
 
 
