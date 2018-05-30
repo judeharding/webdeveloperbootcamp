@@ -45,7 +45,7 @@ $("input[type='text']").keypress(function(e){
         console.log("enter clicked"); // checking for the enter key
         console.log($(this).val());
         var toDoText = $(this).val();  // grabbing the todo text
-        $("ul").append("<li><span>X</span>  " + toDoText + "</li>"); // appends the new todo at the bottom of the ul
+        $("ul").append("<li><span><i class='far fa-trash-alt'></i></span>  " + toDoText + "</li>"); // appends the new todo at the bottom of the ul
         $(this).val(""); // clears out the input field
 
     }
