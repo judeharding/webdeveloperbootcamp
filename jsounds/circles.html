@@ -4,18 +4,30 @@
         <meta charset="utf-8">
         <title>Circles</title>
         <script type="text/javascript" src="paper-full.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.12/howler.js"></script>
         <script type="text/paperscript" canvas="myCanvas">
-            // for (var x = 0; x < 1000; x+=100) {
-            //     for (var y = 0; y < 1000; y+=100) {
-            //         console.log(x, y);
-            //         // var yellCirc = new Path.Circle(new Point(x, y), 20);
-            //         // yellCirc.fillColor = 'yellow';
-            //         new Path.Circle(new Point(x, y), 10).fillColor = 'yellow';
-            //     }
-            // }
+
+            // var sound = new Howl({
+            //     src: ['http://goldfirestudios.com/proj/howlerjs/sound.mp3']
+            // });
+
+
+            var sound = new Howl({
+                src: ['CodeAlong 4/sounds/bubbles.mp3']
+            });
+
+
+
+
             var circles = [];
 
             function onKeyDown(event) {
+                sound.play();
+
+
+
+
+
                 // When any key is pressed, generate new position for a circle
 
                 var maxPoint = new Point(view.size.width, view.size.height);
