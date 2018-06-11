@@ -432,9 +432,28 @@ TODO
 		gradients
 		transitions
 
-#208
+#211  BACKEND
+	www.xxx.net = 23.175.23.178 is the actual unique id for a website
+	2 types of sites
+		STATIC - built server side and sent via html/css/js to us but it is the same everytime
+			vs
+		DYNAMIC - cnn is dynamic b/c you get something different every time
+			Generic stack = backend lang -> server -> database
+							backend = ruby, scalla java php python  javascript
+							database = mysql
+							server = nginx or backbone
+
+			we are going to use:
+				nodejs
+				express framework
+				mongdb db
+
+			request / response cycle is how the web works
+
+			
 
 
+212
 
 
 
