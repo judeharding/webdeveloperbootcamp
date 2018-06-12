@@ -453,9 +453,17 @@ TODO
 
 
 
-#216
-
-
+#223
+	terminal command line commands
+		ls = list
+		cd = change directory
+		cd .. = back up one level
+		few letters + tab = shortcut to long file or folder names
+		ls dirname (ls colors) = files in that directory without you being in that directory
+		touch filename.txt/html/css/js/etc = creates a new file in your current directory
+		mkdir foldername = makes a new folder in the directory you are in
+		rm filename = deletes a specific file
+		rm -rf foldername =  (rf is a flag that means recursive force - deletes any subdirectories too)
 
 
 		.
