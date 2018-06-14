@@ -466,4 +466,49 @@ TODO
 		rm -rf foldername =  (rf is a flag that means recursive force - deletes any subdirectories too)
 
 
-		.
+#224
+	what is node?
+		node.js is a way to write js code on the SERVER side
+
+	why learn it?
+		popular
+		js
+		good libraries
+		high performance
+	node console
+		in the terminal on a command line, just type node.  you will get > indicating you are using node for serverside js
+			you will get a REPL (read, evaluate, print and loop)
+		to quit, hit ctrl c twice
+
+		run a file in node
+			node xxx.js
+
+// simple  node examples
+			function echo (str, num){
+				for (var i = 0; i < num; i++) {
+				console.log(str);
+				}
+			}
+
+			echo("hello", 3);
+			echo("tater tot", 4);
+// #2
+			function average(scores){
+				//add scores together
+				var total = 0;
+				scores.forEach(function(score){
+					total +=score;
+				});
+				//divide by total number of scores
+				var avg = total/scores.length;
+				// round average
+				return Math.round(avg);
+			}
+
+			console.log("avg score for math");
+			var scores = [90, 98, 89, 100, 100, 86, 94];
+			console.log(average(scores));
+
+			console.log("avg score for science");
+			var scores2 = [40, 65, 77, 8, 80, 54, 73, 63, 95, 49];
+			console.log(average(scores2));
