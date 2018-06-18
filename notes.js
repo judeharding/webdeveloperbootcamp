@@ -512,3 +512,23 @@ TODO
 			console.log("avg score for science");
 			var scores2 = [40, 65, 77, 8, 80, 54, 73, 63, 95, 49];
 			console.log(average(scores2));
+
+// node npm
+	popular script package manager
+	on the front end, you use a script tag to include a library
+	on the back end, you use npm to include a library b/c there is no html
+		Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.
+		packages = libraries
+
+	first, thru terminal, you make a new directory for your project and change into it.
+	second, thru terminal, you NPM INSTALL a node package
+		it will take the npm code and put in a NPM_MODULES directory on your machine
+	third, thru a js file, you var/require that package
+	fourth, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
+
+// EXPRESS
+
+	express is framework
+	a framework is a library that has inversion control
+	a library is something that you call on to do something
+	a framework is like a "wizard" where a lot of the work is already done and you develope the hard stuff
