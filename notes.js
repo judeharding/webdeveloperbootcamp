@@ -532,3 +532,24 @@ TODO
 	a framework is a library that has inversion control
 	a library is something that you call on to do something
 	a framework is like a "wizard" where a lot of the work is already done and you develope the hard stuff
+
+	// ===========
+	// ROUTES
+	// ===========
+	// "/" = "hi there!"
+	app.get("/", function(req, res){
+		res.send("hi there!");
+	});
+
+	// "/bye" = "goodbye!"
+	app.get("/bye", function(req, res){
+		res.send("goodbye");
+	});
+
+// NPM init and json
+
+	the package.json file contains meta data about the application or package.
+	we can create our own package.json via typing npm init in our working folder.
+			it will ask a series of questions before creating the package.json files
+				but it will not have any dependencies yet.  that happens when we "npm install express --save"
+					the --save will add the package being installed to our package.json DEPENDINCIES section
