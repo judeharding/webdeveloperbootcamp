@@ -520,11 +520,25 @@ TODO
 		Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.
 		packages = libraries
 
-	first, thru terminal, you make a new directory for your project and change into it.
-	second, thru terminal, you NPM INSTALL a node package
-		it will take the npm code and put in a NPM_MODULES directory on your machine
-	third, thru a js file, you var/require that package
-	fourth, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
+	first, thru terminal, you make a new directory for your project and CHANGE into it.
+	second, thru terminal, you NPM INIT  a node package and state that your ENTRY POINT is app.js
+		(it will take the npm code and put in a NPM_MODULES directory on your machine)
+	(you should see the package.json file now)
+	third, touch your app.js file
+	fourth, thru terminal, NPM INSTALL EXPRESS -- SAVE
+	fifth, thru the js file, you var  express = require("express");
+	sixth, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
+	seventh, then you var app = express(); // to run express and save it to a variable called app
+	eighth, you define the root
+		app.get("/", function(req, res){
+			res.send("hi there.  welcome to my assignment!");
+		});
+	ninth, make sure you have a "listener" at the bottom of your app.js file
+		// tell Express to listen for requests (start server)
+		app.listen(process.env.PORT, process.env.IP, function(){
+			console.log("server has started!!!");
+		});
+		// like listening for port 3000 except for cloud9
 
 // EXPRESS
 
@@ -545,6 +559,36 @@ TODO
 	app.get("/bye", function(req, res){
 		res.send("goodbye");
 	});
+
+	// "/*" = "splat!"
+	app.get("/*", function(req, res){
+		res.send("you are a star");
+	});
+
+	// PS  Order of routes matters.  if the splat is first, none of the other routes will work b/c once a route hits, all else stops
+
+
+	// Route parameters or paths variables or route variables / uses a pattern like
+	// app.get("/x/subname/comments/id/title", function(req, res){
+	app.get("/x/:subname/", function(req, res){
+		res.send("welcome to a subreddit");
+	});
+
+	// allows for any subname, with comments any ide and any title
+	app.get("/x/:subname/comments/:id/:title/", function(req, res){
+		res.send("welcome to a subreddit");
+	});
+
+	// logs what subname was requested
+	app.get("/x/:subname/comments/:id/:title/", function(req, res){
+		// console.log(req.params);
+		var subname = req.params.subname;
+		res.send("welcome to a " + subname.toUpper() + " subreddit");
+	});
+
+
+
+
 
 // NPM init and json
 
