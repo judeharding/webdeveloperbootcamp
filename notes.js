@@ -540,6 +540,31 @@ TODO
 		});
 		// like listening for port 3000 except for cloud9
 
+
+// APP.JS LOOKS LIKE THIS:
+// console.log("new note from app.js");
+//
+// var express = require("express");
+// var app = express();
+//
+// // ==========
+// // ROUTES
+// // ==========
+//
+// app.get("/", function(req, res){
+//    res.send("welcome to the home page");
+// });
+//
+//
+//
+// // ==========
+// // LISTENER
+// // ==========
+//
+// app.listen(process.env.PORT, process.env.IP, function(){
+//     console.log(" Server Is Listening ");
+// })
+
 // EXPRESS
 
 	express is framework
@@ -597,3 +622,14 @@ TODO
 			it will ask a series of questions before creating the package.json files
 				but it will not have any dependencies yet.  that happens when we "npm install express --save"
 					the --save will add the package being installed to our package.json DEPENDINCIES section
+
+
+// EJS SECTION - Intermediate Express
+	what is ejs?  embeded javascript
+		it lets us embed variables, loops and js code inside of html
+		the template ejs files will need to be stored in a VIEWS folder (as that is what ejs is looking for)
+		ejs enables us to have dynamic templates
+		you will need to npm install ejs --save
+		things can be sent back to the user via ejs files in the VIEWS directory.
+		it is done with res.render("file.ejs") on the app.js file
+		<%= xxx %> is treated as javascript code first then returned as html on an ejs file based on data from the user
