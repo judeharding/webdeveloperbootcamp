@@ -627,9 +627,15 @@ TODO
 // EJS SECTION - Intermediate Express
 	what is ejs?  embeded javascript
 		it lets us embed variables, loops and js code inside of html
-		the template ejs files will need to be stored in a VIEWS folder (as that is what ejs is looking for)
+		the template (a template is a dynamic html) ejs files will need to be stored in a VIEWS folder (as that is what ejs is looking for)
 		ejs enables us to have dynamic templates
 		you will need to npm install ejs --save
 		things can be sent back to the user via ejs files in the VIEWS directory.
 		it is done with res.render("file.ejs") on the app.js file
 		<%= xxx %> is treated as javascript code first then returned as html on an ejs file based on data from the user
+			will be found on the ejs file.  BUT the data will come from the app.js file routes
+			you will need to:
+				app.get("/inlove/ :thing", function(req, res){
+					var thing = req.params.thing;
+					res.render("xxx.ejs", {thingVarFromTheEjsPage: thing});
+				});
