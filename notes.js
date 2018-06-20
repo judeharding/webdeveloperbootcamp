@@ -639,3 +639,8 @@ TODO
 					var thing = req.params.thing;
 					res.render("xxx.ejs", {thingVarFromTheEjsPage: thing});
 				});
+
+
+		template logic gets added to the html/ejs file.
+		EACH LINE is wrapped in <%= %>
+		
