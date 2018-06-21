@@ -513,6 +513,9 @@ TODO
 			var scores2 = [40, 65, 77, 8, 80, 54, 73, 63, 95, 49];
 			console.log(average(scores2));
 
+
+
+
 // node npm
 	popular script package manager
 	on the front end, you use a script tag to include a library
@@ -643,4 +646,3 @@ TODO
 
 		template logic gets added to the html/ejs file.
 		EACH LINE is wrapped in <%= %>
-		
