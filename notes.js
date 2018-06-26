@@ -529,14 +529,15 @@ TODO
 	(you should see the package.json file now)
 	third, touch your app.js file
 	fourth, thru terminal, NPM INSTALL EXPRESS -- SAVE
-	fifth, thru the js file, you var  express = require("express");
-	sixth, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
-	seventh, then you var app = express(); // to run express and save it to a variable called app
-	eighth, you define the root
+	fifth - thru terminal, you NPM INSTALL EJS --SAVE
+	sixth, thru the js file, you var  express = require("express");
+	seventh, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
+	eighth, then you var app = express(); // to run express and save it to a variable called app
+	ninth, you define the root
 		app.get("/", function(req, res){
 			res.send("hi there.  welcome to my assignment!");
 		});
-	ninth, make sure you have a "listener" at the bottom of your app.js file
+	tenth, make sure you have a "listener" at the bottom of your app.js file
 		// tell Express to listen for requests (start server)
 		app.listen(process.env.PORT, process.env.IP, function(){
 			console.log("server has started!!!");
@@ -652,6 +653,4 @@ TODO
 		"partials" are sections of code that you include to create a full html file.
 			an html page has 3 sections -- doctype, head/title and body tags
 
-
-
-			
+		when working with POST requests, you will need to npm install body-parser --save, then require it at the top of the app.js file
