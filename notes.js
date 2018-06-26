@@ -631,6 +631,8 @@ TODO
 	what is ejs?  embeded javascript
 		it lets us embed variables, loops and js code inside of html
 		the template (a template is a dynamic html) ejs files will need to be stored in a VIEWS folder (as that is what ejs is looking for)
+			note - the VIEWS folder is automatically served up.  If you want to include any OTHER folder, you have to go to the app.js and tell it.
+				under the VAR statements, add app.use(express.static("FOLDERNAME")); // then add the <link rel="stylesheet" href="app.css"> tag to each page
 		ejs enables us to have dynamic templates
 		you will need to npm install ejs --save
 		things can be sent back to the user via ejs files in the VIEWS directory.
@@ -646,3 +648,10 @@ TODO
 
 		template logic gets added to the html/ejs file.
 		EACH LINE is wrapped in <%= %>
+
+		"partials" are sections of code that you include to create a full html file.
+			an html page has 3 sections -- doctype, head/title and body tags
+
+
+
+			
