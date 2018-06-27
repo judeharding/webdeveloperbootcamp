@@ -654,3 +654,10 @@ TODO
 			an html page has 3 sections -- doctype, head/title and body tags
 
 		when working with POST requests, you will need to npm install body-parser --save, then require it at the top of the app.js file
+
+
+// API's
+	ways for you to interact with other sites thru CODE
+	how do they work?
+		endpoints = when you get data backend.  the data has no structure.  it is either xml (extended markup lang) or json (js obj notation)
+			both are in key/value pairs
