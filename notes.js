@@ -661,3 +661,25 @@ TODO
 	how do they work?
 		endpoints = when you get data backend.  the data has no structure.  it is either xml (extended markup lang) or json (js obj notation)
 			both are in key/value pairs
+
+	in terminal, type curl http://www.google.com and you will see the code
+
+	NPM INSTALL request
+	then go to your js file and enter:
+	var request = require('request');
+
+	request('http://www.google.com', function (error, response, body) {
+		console.log('error:', error); // Print the error if one occurred
+		console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+		console.log('body:', body); // Print the HTML for the Google homepage.
+	});
+
+
+
+
+
+
+
+
+
+			...
