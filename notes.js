@@ -544,6 +544,27 @@ TODO
 		});
 		// like listening for port 3000 except for cloud9
 
+	eleventh, start adding your route pages like:
+		app.get("/campgrounds", function(req, res){
+			res.render("campgrounds");
+		});
+		(note that the campgrounds.ejs should be located off the root)
+	twelth - add your partials directory in the VIEWS folder and create your header and footer includes
+		in your header, add the bootstrap css cdn
+		in your footer, add a p-tag for copyright (just to make sure it is working)
+	thirteenth - you need to add your POST route.  ex.
+			app.post("/campgrounds", function(req, res){
+				// get data from form and add to campgrounds array
+				res.send("You hit the POST route...");
+				// redirect to campgrounds page
+			});
+			// you can use POSTMAN app to test your post requests
+	fourteenth - npm install bodyparser --SAVE
+		and include it as a var on the app.js page  var bodyParser = require("body-parser");
+		then use it - app.use(bodyParser.urlencoded({extended: true}));
+
+
+
 
 // APP.JS LOOKS LIKE THIS:
 // console.log("new note from app.js");
