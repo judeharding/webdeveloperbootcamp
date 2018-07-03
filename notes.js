@@ -483,7 +483,7 @@ TODO
 		run a file in node
 			node xxx.js
 
-// simple  node
+// simple  node example 
 			function echo (str, num){
 				for (var i = 0; i < num; i++) {
 				console.log(str);
