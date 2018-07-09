@@ -483,7 +483,7 @@ TODO
 		run a file in node
 			node xxx.js
 
-// simple  node example 
+// simple  node example
 			function echo (str, num){
 				for (var i = 0; i < num; i++) {
 				console.log(str);
@@ -699,9 +699,14 @@ TODO
 I THINK that the omdbapi free website is down.  can not get 255 to work
 
 
+starting section 27 - lesson 261
 
-
-
+DATABASES
+	sql vs no-sql
+	a database is a collection of information with an interface
+	sql = relational databases
+	vs
+	no-sql = non-relational databases (BSON = Bianary JS Object Notation)
 
 
 			...
