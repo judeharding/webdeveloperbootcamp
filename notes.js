@@ -708,5 +708,42 @@ DATABASES
 	vs
 	no-sql = non-relational databases (BSON = Bianary JS Object Notation)
 
+	SQL  (relational)
+	SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+	FROM Orders
+	INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+			Different Types of SQL JOINs
+			Here are the different types of the JOINs in SQL:
+
+			(INNER) JOIN: Returns records that have matching values in both tables
+			LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+			RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+			FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
+
+	NO SQL (non-relational)
+	//no tables but BSON - VERY FLEXIBLE
+	{
+		name: "mary",
+		age: 24,
+		city: "clt",
+		comments: [
+			{text: "come visit montana"};
+			{text: "i love puppies"}
+		],
+		favColor: "purple"
+	}
+
+
+	MONGODB is a no-sql database and non-relational
+	it is pretty popular and part of the MEAN stack
+		MONGODB
+		EXPRESS
+		ANGULAR
+		NODE
+
+		(not using angular this times)
+
+
 
 			...
