@@ -742,8 +742,27 @@ DATABASES
 		ANGULAR
 		NODE
 
-		(not using angular this times)
+		(not using angular this time)
 
 
+	MONGO COMMANDS
 
+	mongod runs the deamon process in one session of terminal -- needed to use mongo
+	mongo runs the mongo shell in another session of terminal -- like a js console
+	help shows the common mongo commands
+	show dbs lists all of the databases -- there are 2 defaults, admin and local
+	use dbname -- is used to create or use a database
+	insert collectionname -- is used to create or use a table w/in the db aka db.dogs.insert() //db is the db we are on (demo), dogs is the collection and insert is the command to insert a object
+	show collections - will return all of the "tables"
+	find = db.collectionname.find() // returns all of the records in the collection
+	(ps -- mongo automatically adds an unique id for each record)
+	update -- db.dogs.update({name: "rusty"}, $set: {breed: "poodle", isCute: "true"})
+	remove --db.dogs.remove({breed: "poodle"})
+
+	C create
+	R read
+	U update
+	D delete
+
+		break;
 			...
