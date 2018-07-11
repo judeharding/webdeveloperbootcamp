@@ -757,12 +757,16 @@ DATABASES
 	find = db.collectionname.find() // returns all of the records in the collection
 	(ps -- mongo automatically adds an unique id for each record)
 	update -- db.dogs.update({name: "rusty"}, $set: {breed: "poodle", isCute: "true"})
-	remove --db.dogs.remove({breed: "poodle"})
+	remove --db.dogs.remove({breed: "poodle"}) //removes ALL poodles
+		db.collection.remove({}, {justOne: true}) // removes the first ONE
+
 
 	C create
 	R read
 	U update
 	D delete
 
-		break;
-			...
+
+MONGOOSE - mongo object modeling for node js
+	tool that is downloaded with npm helps us interact with mongodb
+	object data mapper -- a way to enter js into mongo 
