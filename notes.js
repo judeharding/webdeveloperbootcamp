@@ -769,4 +769,53 @@ DATABASES
 
 MONGOOSE - mongo object modeling for node js
 	tool that is downloaded with npm helps us interact with mongodb
-	object data mapper -- a way to enter js into mongo 
+	object data mapper -- a way to enter js into mongo
+
+
+To Add MONGOOSE
+	1.)  install and configure MONGOOSE
+	2.)  setup campground model
+	3.)  use campground model inside our routes
+
+	v2 terminal npm install mongoose --SAVE  (check your json file for mongoose)
+	on your app.js page, var mongoose = require("mongoose");
+	then connect mongoose to a db -- mongoose.connect("mongodb://localhost/yelp_camp"); //either runs the db or creates the db and then runs it
+	still in the app.js, add the schema
+	// SCHEMA SETUP
+		var campgroundSchema = new mongoose.Schema({
+		name: String,
+		image: String
+		});
+
+	then add the model
+		var Campground = mongoose.model("Campground", campgroundSchema); // makes a model that
+
+	you can test it with:
+		Campground.create(
+			{
+				name: "Salmon Creek",
+				image: "https://farm9.staticflickr.com/8442/7962474612_bf2baf67c0.jpg"
+			}, function(err, campground){
+				if (err) {
+					console.log(err);
+				} else {
+					console.log("Newly Created Campground :");
+					console.log(campground);
+				}
+			}
+		);
+		then in mongo, type show dbs (and you should see your new db)
+			then type use newdbname (and it will switch to that db)
+			then type show collections (to see the table)
+			then type db.collectionname.find() (to see the data in the new table)
+
+		
+
+
+
+
+
+
+
+
+	xxx
