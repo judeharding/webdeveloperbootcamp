@@ -809,8 +809,10 @@ To Add MONGOOSE
 			then type show collections (to see the table)
 			then type db.collectionname.find() (to see the data in the new table)
 
-		
 
+make sure that when you are grabbing an image url (hot linking), that you actually
+get JUST THE IMAGE and not the webpage.  the webpage will cause your yelp_camp to
+not display correctly.
 
 
 
