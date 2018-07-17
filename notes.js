@@ -758,7 +758,8 @@ DATABASES
 	(ps -- mongo automatically adds an unique id for each record)
 	update -- db.dogs.update({name: "rusty"}, $set: {breed: "poodle", isCute: "true"})
 	remove --db.dogs.remove({breed: "poodle"}) //removes ALL poodles
-		db.collection.remove({}, {justOne: true}) // removes the first ONE
+		     db.collection.remove({}, {justOne: true}) // removes the first ONE
+			 db.tblname.drop() // removes all the test data from your table
 
 
 	C create
@@ -815,9 +816,15 @@ get JUST THE IMAGE and not the webpage.  the webpage will cause your yelp_camp t
 not display correctly.
 
 
+RESTFUL ROUTE PATTERNS
+there are 7 "patterns"
+Representational State Transfer (REST) REST-compliant web services allow the
+requesting systems to access and manipulate textual representations of web resources
+by using a uniform and predefined set of stateless operations
 
-
-
-
-
-	xxx
+	name         url          verb     desc
+	========================================
+	INDEX        /dogs        GET      Display a list of all dogs
+ 	NEW          /dogs/new    GET      Displays the form to make new record (ps -- MUST appear before the SHOW route)
+	CREATE       /dogs        POST     Add new dog to db
+	SHOW         /dogs:id     GET      Show all the info on ONE record and
