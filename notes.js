@@ -816,15 +816,41 @@ get JUST THE IMAGE and not the webpage.  the webpage will cause your yelp_camp t
 not display correctly.
 
 
-RESTFUL ROUTE PATTERNS
-there are 7 "patterns"
-Representational State Transfer (REST) REST-compliant web services allow the
-requesting systems to access and manipulate textual representations of web resources
-by using a uniform and predefined set of stateless operations
+RESTFUL ROUTE PATTERNS - CONVENTION AND ARCHITECTURE not required but recommended
+	there are 7 "patterns"  https://cdn-images-1.medium.com/max/1000/1*slrwqTXKO6evtPn5YVWR2Q.png
+	Representational State Transfer (REST) REST-compliant web services allow the
+	requesting systems to access and manipulate textual representations of web resources
+	by using a uniform and predefined set of stateless operations
+	OR
+	a mapping between HTTP routes and CRUD together
 
-	name         url          verb     desc
-	========================================
-	INDEX        /dogs        GET      Display a list of all dogs
- 	NEW          /dogs/new    GET      Displays the form to make new record (ps -- MUST appear before the SHOW route)
-	CREATE       /dogs        POST     Add new dog to db
-	SHOW         /dogs:id     GET      Show all the info on ONE record and
+	name         url               verb        desc
+	==================================================
+	INDEX        /dogs             GET         Display a list of all dogs
+ 	NEW          /dogs/new         GET         Displays the FORM to make new record (ps -- MUST appear before the SHOW route)
+	CREATE       /dogs             POST        Add new dog to db and redirects somewhere (is used in conjunction with the NEW route_
+	SHOW         /dogs:id          GET         Show all the info on ONE record and
+	EDIT		 /dogs/:id/edit	   GET	       Show edit form for one dog	Dog.findById()
+	Update	     /dogs/:id	       PUT	       Update particular dog, then redirect somewhere	Dog.findByIdAndUpdate()
+	Destroy	     /dogs/:id	       DELETE	   Delete a particular dog, then redirect somewhere
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+...
