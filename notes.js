@@ -522,44 +522,54 @@ TODO
 	on the back end, you use npm to include a library b/c there is no html
 		Use npm to install, share, and distribute code; manage dependencies in your projects; and share & receive feedback with others.
 		packages = libraries
+GETTING STARTED
 
-	first, thru terminal, you make a new directory for your project and CHANGE into it.
-	second, thru terminal, you NPM INIT  a node package and state that your ENTRY POINT is app.js
+	1.), thru terminal, you make a new directory for your project and CHANGE into it.
+	2.), thru terminal, you NPM INIT  a node package and state that your ENTRY POINT is app.js
 		(it will take the npm code and put in a NPM_MODULES directory on your machine)
-	(you should see the package.json file now)
-	third, touch your app.js file
-	fourth, thru terminal, NPM INSTALL EXPRESS -- SAVE
-	fifth - thru terminal, you NPM INSTALL EJS --SAVE
-	sixth, thru the js file, you var  express = require("express");
-	seventh, thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
-	eighth, then you var app = express(); // to run express and save it to a variable called app
-	ninth, you define the root
+		(you should see the package.json file now)
+	3.), touch your app.js file
+	4.), thru terminal, NPM INSTALL EXPRESS -- SAVE
+	5.) - thru terminal, you NPM INSTALL EJS --SAVE
+		(or you can just terminal npm install express mongoose body-parser ejs --save)
+	6.), thru the js file, you
+		var	express 	= require("express"), //framework
+			app 		= express(), // to run express and save it to a variable called app - app.get or app.post, etc...
+			mongoose 	= require("mongoose"), //mongodb object modeling tool
+			bodyParser 	= require("body-parser"); // works with express to parse json strings for POST requests
+
+	7.), thru the js file, you can conlog the var to see it work (since you do not have access to an html file)
+	8.), then you:
+		app.set("view engine", "ejs") // simple templating language that lets you generate HTML with plain JavaScript.
+		app.use(express.static("public")); // serve custom stylesheet
+		app.use(bodyParser.urlencoded({extended: true})); // allowes express to read thebody then parse that into json objects
+	9.), you define the root
 		app.get("/", function(req, res){
 			res.send("hi there.  welcome to my assignment!");
 		});
-	tenth, make sure you have a "listener" at the bottom of your app.js file
+	10.), make sure you have a "listener" at the bottom of your app.js file
 		// tell Express to listen for requests (start server)
 		app.listen(process.env.PORT, process.env.IP, function(){
 			console.log("server has started!!!");
 		});
 		// like listening for port 3000 except for cloud9
 
-	eleventh, start adding your route pages like:
+	11.), start adding your route pages like:
 		app.get("/campgrounds", function(req, res){
 			res.render("campgrounds");
 		});
 		(note that the campgrounds.ejs should be located off the root)
-	twelth - add your partials directory in the VIEWS folder and create your header and footer includes
+	12.) - add your partials directory in the VIEWS folder and create your header and footer includes
 		in your header, add the bootstrap css cdn
 		in your footer, add a p-tag for copyright (just to make sure it is working)
-	thirteenth - you need to add your POST route.  ex.
+	13.) - you need to add your POST route.  ex.
 			app.post("/campgrounds", function(req, res){
 				// get data from form and add to campgrounds array
 				res.send("You hit the POST route...");
 				// redirect to campgrounds page
 			});
 			// you can use POSTMAN app to test your post requests
-	fourteenth - npm install bodyparser --SAVE
+	14.) - npm install bodyparser --SAVE
 		and include it as a var on the app.js page  var bodyParser = require("body-parser");
 		then use it - app.use(bodyParser.urlencoded({extended: true}));
 
@@ -650,7 +660,7 @@ TODO
 
 
 // EJS SECTION - Intermediate Express
-	what is ejs?  embeded javascript
+	what is ejs? // simple templating language that lets you generate HTML with plain JavaScript.
 		it lets us embed variables, loops and js code inside of html
 		the template (a template is a dynamic html) ejs files will need to be stored in a VIEWS folder (as that is what ejs is looking for)
 			note - the VIEWS folder is automatically served up.  If you want to include any OTHER folder, you have to go to the app.js and tell it.
