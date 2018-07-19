@@ -845,7 +845,7 @@ RESTFUL ROUTE PATTERNS - CONVENTION AND ARCHITECTURE not required but recommende
 	Destroy	     /dogs/:id	       DELETE	   Delete a particular dog, then redirect somewhere
 
 
-
+lecture 276
 
 
 
