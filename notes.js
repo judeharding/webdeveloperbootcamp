@@ -847,7 +847,7 @@ RESTFUL ROUTE PATTERNS - CONVENTION AND ARCHITECTURE not required but recommende
 
 lecture 276
 
-space
+Found a space in the ahref of a link with ejs.  took 2 1/2 days to find the error.
 
 
 
