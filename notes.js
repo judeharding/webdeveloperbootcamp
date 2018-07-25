@@ -767,6 +767,7 @@ DATABASES
 	find = db.collectionname.find() // returns all of the records in the collection
 	(ps -- mongo automatically adds an unique id for each record)
 	update -- db.dogs.update({name: "rusty"}, $set: {breed: "poodle", isCute: "true"})
+
 	remove --db.dogs.remove({breed: "poodle"}) //removes ALL poodles
 		     db.collection.remove({}, {justOne: true}) // removes the first ONE
 			 db.tblname.drop() // removes all the test data from your table
@@ -850,8 +851,14 @@ lecture 276
 Found a space in the ahref of a link with ejs.  took 2 1/2 days to find the error.
 
 
+	<p><%= blog.body.substring(0, 20) %>...</p> // for a blog post, the substring variable will only post the first 20 characters
 
-
+	<div class="description">
+		// <!--below shows all the body using the = sign - no markups
+		<p><%= blog.body %></p>
+		// below shows all the body using the - sign - with markups (but allows for sql injections)
+		<p><%- blog.body %></p>
+	</div>
 
 
 
