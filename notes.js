@@ -861,10 +861,16 @@ Found a space in the ahref of a link with ejs.  took 2 1/2 days to find the erro
 	</div>
 
 
+html forms do not support PUT requests.  no reason why but they only support GET and POST requests.
+	any PUT requests on an HTML form are created as GET requests and shows all the info in the url
+	the work around is to change the html method back to POST and add ?_method=PUT before the closing ""
+	ex <form class="ui form" action="/blogs/<%= blogs._id %>?_method=PUT" method="POST">
+		then method_override will configure it in the app.js
+		so npm/install npm install method-override --save
+		do not forget to "REQUIRE method override" and to app.use(methodOverride("_method"));
+	(PS - you can do a <form class="ui form" action="/blogs/<%= blogs._id %>" method="POST"> but it does not follow the RESTFUL pattern)
 
-
-
-
+stopping at 9:45
 
 
 
