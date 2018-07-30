@@ -870,7 +870,7 @@ html forms do not support PUT requests.  no reason why but they only support GET
 		do not forget to "REQUIRE method override" and to app.use(methodOverride("_method"));
 	(PS - you can do a <form class="ui form" action="/blogs/<%= blogs._id %>" method="POST"> but it does not follow the RESTFUL pattern)
 
-stopping at 9:45
+
 
 
 
