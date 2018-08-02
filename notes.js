@@ -882,6 +882,34 @@ HOW TO SANITIZE DATA ENTRIES
 	npm install sanitizer --save
 
 
+ASSOCIATIONS = relational database???
+	one to one relationships
+		one book - one publisher
+		how to EMBED data for user and post thru mongo
+		if you have a user schema and a posts schema and add the posts array to the user
+			schema, you have ASSOCIATED the two through embedding data
+
+		through object references
+			User.findOne({email: "bob@gmail.com"}).populate("posts").exec(function(err, user){
+				if(err){
+					console.log(err);
+				} else {
+					console.log(user);
+				}
+			});
+
+		why use one over the other?
+		
+
+
+
+
+
+	one to many relationships
+	many to many relationships
+		students - classes
+
+
 
 
 
