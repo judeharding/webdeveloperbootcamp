@@ -872,7 +872,14 @@ html forms do not support PUT requests.  no reason why but they only support GET
 
 
 
+https://webdevbootcamp-judeharding.c9users.io/
 
+RESTFUL ROUTES jpg https://codepen.io/urketadic/details/oZRdRN
+
+HOW TO SANITIZE DATA ENTRIES
+	takes input and removes any scripts
+
+	npm install sanitizer --save
 
 
 
