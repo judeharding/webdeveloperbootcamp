@@ -909,8 +909,16 @@ ASSOCIATIONS = relational database???
 	many to many relationships
 		students - classes
 
+		module.exports allows us to clean up our code by breaking up our RESTFUL code into other module files.
+
+	section 30 - refactoring yelp_camp
 
 
-	section 30
+
+
+
+
+
+	
 
 ...
