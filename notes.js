@@ -913,12 +913,13 @@ ASSOCIATIONS = relational database???
 
 	section 30 - refactoring yelp_camp
 
-
-
-
-
-
-
+	section 31 - 294
 	
+
+
+
+
+
+
 
 ...
