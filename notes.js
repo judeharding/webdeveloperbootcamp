@@ -975,6 +975,7 @@ TERMINAL
 				npm install passport-local-mongoose   -- save
 				npm install body- parser --save
 				npm install epxress-session --save
+				npm install ejs --save
 
 			make the views folder
 			make the models folder
@@ -982,7 +983,14 @@ TERMINAL
 			in the app.js file, start requiring all of the installed packages
 			ex
 				var express = require("express");
-				var app = express;
+				var app = express();
+
+				set up the app.listener at the bottom of the app.js file
+				
+
+			Set up your routes
+			Add files to your views folder that correspond to the routes in the app.js files
+
 
 
 
