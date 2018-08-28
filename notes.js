@@ -937,6 +937,52 @@ NESTED ROUTES b/c a comment is dependent on a campground
 NEW     campgrounds/:id/comments/new  GET
 CREATE  campgrounds/:id/comments      POST
 
+yelpcamp v5 for connecting a stylesheet
+
+
+
+--------------------------------------
+section 302 starts authentication
+
+HOW authentication works birdseye view
+	3 tools
+	use passport js - authentication middleware for node
+		strategies are different ways to auth - -fb, twtr or un&pw
+	use passport local -- used for un or em & pw
+	use passport local mongoose -- to be used with a db for speed and ease
+	express-session --
+
+	http is a stateless protocol - 1 time transaction and hard to use with auth
+		SESSIONS are a way to make http not stateless
+		a logged in person is stored in sessions as long as THAT browser is open and not logged out
+
+	1.)  you will have to set up folder structures
+	2.)  install packages
+	3.)  add root routes and templates
+	4.)  add a SECRET route and templates
+
+
+TERMINAL
+	Authentication folder
+		AuthDemo folder
+			npm init in the AuthDemo folder
+			touch app.js
+			install packages
+				npm install express -- save
+				npm install mongoose  -- save
+				npm install passport  -- save
+				npm install passport-local  -- save
+				npm install passport-local-mongoose   -- save
+				npm install body- parser --save
+				npm install epxress-session --save
+
+			make the views folder
+			make the models folder
+
+			in the app.js file, start requiring all of the installed packages
+			ex
+				var express = require("express");
+				var app = express;
 
 
 
