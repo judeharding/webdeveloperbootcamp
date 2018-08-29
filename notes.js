@@ -986,13 +986,51 @@ TERMINAL
 				var app = express();
 
 				set up the app.listener at the bottom of the app.js file
-				
+
 
 			Set up your routes
 			Add files to your views folder that correspond to the routes in the app.js files
 
+			Create your User model
+				models folder to user.js
+					every file in the models directory will need an EXPORT line.
+						ex - module.exports = mongoose.model("User", UserSchema);
+					then go back to your app.js file and require the user.js file
+					in the app.js file, set up your passport encoding and decoding lines:
+
+						//required for authorization
+						app.use(require("express-session")({
+						// below is a few words to encode and decode the sessions
+						secret: "Rusty is the best and cutest dog in the world",
+						resave: false,
+						saveUninitialized: false
+						}));
+
+				Configure passport in the app.js
+
+						// sets up passport for authorization
+						app.use(passport.initialize());
+						app.use(passport.session());
+
+
+						//these 2 methods read the session and encoding and decoding it
+						// works wit passportLocalMongoose
+						passport.serializeUser(User.serializeUser());
+						passport.deserializeUser(User.deserializeUser());
+
+				Set up the routes in the app.js
 
 
 
+
+
+
+
+
+
+
+
+
+306
 
 ...
