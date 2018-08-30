@@ -1013,15 +1013,16 @@ TERMINAL
 						app.use(passport.session());
 
 
-						//these 2 methods read the session and encoding and decoding it
+						//these 3 methods read the session and encoding and decoding it
 						// works wit passportLocalMongoose
+						passport.use(new LocalStategy(User.authenticate()));
 						passport.serializeUser(User.serializeUser());
 						passport.deserializeUser(User.deserializeUser());
 
 				Set up the routes in the app.js
 
 
-
+				will probably NEVER use this
 
 
 
