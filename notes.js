@@ -1027,11 +1027,35 @@ TERMINAL
 
 
 
+337
+
+GIT BASICS
+	git init on the root file in TERMINAL
+	git status
+	git add .
+	git commit
+	git push origin master
 
 
+	git log // the basic history of all the commits
+		you will see the author, date and message of the last few commits
+		you will also see the HASH number
+		copy the hash number of the commit you would like to revert to
+		type  q  in the terminal window to get out of the history lists
+
+	git checkout (paste in the long HASH number) and you will get a HEAD DETACHED number
+		this allows you to LOOK at old code
+		you can either choose to
+			look at the old code then go back to the current code
+				by doing a git checkout master in terminal
+			OR
+			just go back to an old version that was working and reset your HEAD
+				git revert --no-commit HASHnumber..HEAD // revert everything from the HEAD back to the commit hash
+				then
+				git commit -m "revert back to xyz hash before i broke "
+				//resets your head
 
 
-
-313
+				
 
 ...
