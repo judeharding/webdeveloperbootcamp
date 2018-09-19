@@ -1072,29 +1072,39 @@ DEPLOYING APPLICATIONS
 
 	you can use GIT to deploy to the heroku server // make sure it is active IN the directory
 
-	from a terminal window IN the directory, type heroku create // to create a server space on heroku
-		it will give you a NAME and HTTP location
-			⬢ pacific-bayou-18406
-			https://pacific-bayou-18406.herokuapp.com/
-		in the terminal window type git remote -v and you will see the git folders on the servers
-			heroku  https://git.heroku.com/pacific-bayou-18406.git (fetch)
-			heroku  https://git.heroku.com/pacific-bayou-18406.git (push)
+	from a terminal window IN the directory, type
+		heroku create // to create a server space on heroku
+			it will give you a NAME and HTTP location
+				⬢ pacific-bayou-18406
+				https://pacific-bayou-18406.herokuapp.com/
+			in the terminal window type git remote -v and you will see the git folders on the servers
+				heroku  https://git.heroku.com/pacific-bayou-18406.git (fetch)
+				heroku  https://git.heroku.com/pacific-bayou-18406.git (push)
 
-	on your machine or cloud9, in the terminal window, type git push heroku master
+	on your machine or cloud9, in the terminal window, type
+	git push heroku master
 		// and you send your folders over to the serve where the heroku magic happens
 
-	IF YOU GET AN ERROR ON THE HEROKU SERVER, in your terminal window type
-			heroku logs
-			and you will see a long list of stuff.  just look for the ERR messages and the item above the first
-				err message is where it failed.
+			IF YOU GET AN ERROR ON THE HEROKU SERVER, in your terminal window type
+					heroku logs
+					and you will see a long list of stuff.  just look for the ERR messages and the item above the first
+						err message is where it failed.
 
-		ps -- it might be a npm start script.  add this to the pkg.json file in SCRIPTS section
-			"start"; "app.js"
-			then push it to the heroku server and you should be good to go.
+				ps -- it might be a npm start script.  add this to the pkg.json file in SCRIPTS section
+					"start"; "app.js"
+					then push it to the heroku server and you should be good to go.
+
+	
 
 
 
 
+IF you are deploying something with a database, there are a few modifications to the process above
+
+
+
+Creating app... done, ⬢ sleepy-lowlands-54058
+https://sleepy-lowlands-54058.herokuapp.com/ | https://git.heroku.com/sleepy-lowlands-54058.git
 
 
 
