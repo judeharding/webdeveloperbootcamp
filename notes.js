@@ -1055,7 +1055,51 @@ GIT BASICS
 				git commit -m "revert back to xyz hash before i broke "
 				//resets your head
 
+FYI - learnwithcolt@gmail.com
 
-				
+340
+DEPLOYING APPLICATIONS
+
+	cloud9 is not designed for deployment
+	use a server farm that rents out space
+		heroku or aws or digital ocean or node jitsu or modulus or modulo
+
+		deploying just means that you are running on a server 24/7 - someone watches to make sure it is always up.
+
+	make sure that your application has a json file with all the depenencies.  the servers have a list of programs
+		and it keeps from duplicating files that everyone else is already using.
+		so the NODE file will not go over to the server.
+
+	you can use GIT to deploy to the heroku server // make sure it is active IN the directory
+
+	from a terminal window IN the directory, type heroku create // to create a server space on heroku
+		it will give you a NAME and HTTP location
+			⬢ pacific-bayou-18406
+			https://pacific-bayou-18406.herokuapp.com/
+		in the terminal window type git remote -v and you will see the git folders on the servers
+			heroku  https://git.heroku.com/pacific-bayou-18406.git (fetch)
+			heroku  https://git.heroku.com/pacific-bayou-18406.git (push)
+
+	on your machine or cloud9, in the terminal window, type git push heroku master
+		// and you send your folders over to the serve where the heroku magic happens
+
+	IF YOU GET AN ERROR ON THE HEROKU SERVER, in your terminal window type
+			heroku logs
+			and you will see a long list of stuff.  just look for the ERR messages and the item above the first
+				err message is where it failed.
+
+		ps -- it might be a npm start script.  add this to the pkg.json file in SCRIPTS section
+			"start"; "app.js"
+			then push it to the heroku server and you should be good to go.
+
+
+
+
+
+
+
+
+
+
 
 ...
