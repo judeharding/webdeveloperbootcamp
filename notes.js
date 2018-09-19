@@ -1105,13 +1105,27 @@ DEPLOYING APPLICATIONS
 
 		you can run terminal commands on heroku by typing the prefix heroku run
 			ex heroku run ls // shows the files that are on heroku
-			
+
+	There is a free db cloud hosting - mongolab now called mlab.  set up a free sandbox account
+		you will have to create a DB USER that has access to the db admin functions within mlabs
 
 
 
 
+
+
+
+
+heroku
 Creating app... done, ⬢ sleepy-lowlands-54058
 https://sleepy-lowlands-54058.herokuapp.com/ | https://git.heroku.com/sleepy-lowlands-54058.git
+
+mlab
+yelpcampgdla  mongodb://<dbuser>:<dbpassword>@ds163402.mlab.com:63402/yelpcampgdla
+	udpated  mongodb://yelpcampgdla:yelpcampgdla$18@ds163402.mlab.com:63402/yelpcampgdla
+	dbusername  yelpcampgdla
+	dbpw yelpcampgdla$18
+
 
 
 
