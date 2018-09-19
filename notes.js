@@ -1094,12 +1094,19 @@ DEPLOYING APPLICATIONS
 					"start"; "app.js"
 					then push it to the heroku server and you should be good to go.
 
-	
 
 
 
 
-IF you are deploying something with a database, there are a few modifications to the process above
+
+	IF you are deploying something with a database, there are a few modifications to the process above
+		if you are running mongd and mongo in the background, you might not have an issue
+		BUT, that's
+
+		you can run terminal commands on heroku by typing the prefix heroku run
+			ex heroku run ls // shows the files that are on heroku
+			
+
 
 
 
