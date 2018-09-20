@@ -1075,11 +1075,11 @@ DEPLOYING APPLICATIONS
 	from a terminal window IN the directory, type
 		heroku create // to create a server space on heroku
 			it will give you a NAME and HTTP location
-				⬢ pacific-bayou-18406
-				https://pacific-bayou-18406.herokuapp.com/
+			⬢ immense-eyrie-62582
+			https://immense-eyrie-62582.herokuapp.com/ | https://git.heroku.com/immense-eyrie-62582.git
 			in the terminal window type git remote -v and you will see the git folders on the servers
-				heroku  https://git.heroku.com/pacific-bayou-18406.git (fetch)
-				heroku  https://git.heroku.com/pacific-bayou-18406.git (push)
+				heroku  https://git.heroku.com/immense-eyrie-62582.git (fetch)
+				heroku  https://git.heroku.com/immense-eyrie-62582.git (push)
 
 	on your machine or cloud9, in the terminal window, type
 	git push heroku master
@@ -1116,15 +1116,17 @@ DEPLOYING APPLICATIONS
 
 
 
-heroku
-Creating app... done, ⬢ sleepy-lowlands-54058
-https://sleepy-lowlands-54058.herokuapp.com/ | https://git.heroku.com/sleepy-lowlands-54058.git
+	heroku
+	Creating app... done, ⬢ sleepy-lowlands-54058
+	https://sleepy-lowlands-54058.herokuapp.com/ | https://git.heroku.com/sleepy-lowlands-54058.git
 
-mlab
-yelpcampgdla  mongodb://<dbuser>:<dbpassword>@ds163402.mlab.com:63402/yelpcampgdla
-	udpated  mongodb://yelpcampgdla:yelpcampgdla$18@ds163402.mlab.com:63402/yelpcampgdla
-	dbusername  yelpcampgdla
-	dbpw yelpcampgdla$18
+	mlab
+	To connect using the mongo shell:
+	mongo ds263642.mlab.com:63642/gdlayelpcamp -u <dbuser> -p <dbpassword>
+	To connect using a driver via the standard MongoDB URI (whats this?):
+	mongodb://<dbuser>:<dbpassword>@ds263642.mlab.com:63642/gdlayelpcamp
+	dbusername gdlayelpcamp
+	dbuserpw fr..18
 
 
 
