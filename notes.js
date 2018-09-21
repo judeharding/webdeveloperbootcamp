@@ -1129,6 +1129,65 @@ DEPLOYING APPLICATIONS
 	dbuserpw fr..18
 
 
+	database working vs production
+	in the terminal line, type export DATABASEURL=mongodb://localhost/yelp_camp_v12
+	then in the app.js file
+		console.log(process.env.DATABASEURL);
+		mongoose.connect(process.env.DATABASEURL); // for the local connection
+
+
+	console.log(process.env.DATABASEURL);
+
+	// LOCAL CONNECTION for DEVELOPMENT
+	// mongoose.connect("mongodb://localhost/yelp_camp_v12");
+	mongoose.connect(process.env.DATABASEURL);
+
+	// CLOUD CONNECTION for PRODUCTION
+	// mongoose.connect("mongodb://gdlayelpcamp:freetr18@ds263642.mlab.com:63642/gdlayelpcamp", { useNewUrlParser: true });
+	// add the above url to the heroku config vars with a key of DATABASEURL and a value of the mongodburl
+	// This HIDES the xxx in an environment variable when you post to github or open source
+
+	the database environment variables on local and cloud9 are set to DATABASEURL
+		via mongoose.connect(process.env.DATABASEURL);
+
+	but you want a backup (just in case).
+			add to app.js
+				var url = proces.env.DATABASEURL || "mongodb://localhost/yelp_camp_v12";
+
+
+
+
+
+JavaScript: The Tricky Stuff
+
+
+THIS keyword reserved
+	determined by how a function is called
+		functions execution context
+	FOUR RULES OF THIS
+	http://webdev.slides.com/eschoppik/deck/#/2
+
+	global --  outside of an declared object aka the window object
+	implicit --
+	explicit --
+		call
+		apply
+		bind
+			can use the settimeout method
+	new reserved keyword
+	RECAP -- http://webdev.slides.com/eschoppik/deck/#/15
+
+	
+
+
+
+
+
+
+
+
+
+
 
 
 
