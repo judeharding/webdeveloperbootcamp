@@ -1178,7 +1178,7 @@ THIS keyword reserved
 	RECAP -- http://webdev.slides.com/eschoppik/deck/#/15
 
 	OOP http://webdev.slides.com/eschoppik/deck-1/#/1
-		constructor functions are templates
+		constructor functions are templates that create objects
 			function House (bedrooms, bathrooms, numSqft){
 				this.bedrooms = bedrooms;
 				this.bathrooms = bathrooms;
@@ -1190,7 +1190,12 @@ THIS keyword reserved
 
 			var firstHouse = new House(2, 2, 1000);
 	RECAP - http://webdev.slides.com/eschoppik/deck-1/#/13
-	
+
+	PROTOTYPES http://webdev.slides.com/eschoppik/deck-1-2/#/1
+		new keyword is a new object has a property __proto__
+
+		prototype chain
+		
 
 
 
