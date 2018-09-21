@@ -1177,6 +1177,19 @@ THIS keyword reserved
 	new reserved keyword
 	RECAP -- http://webdev.slides.com/eschoppik/deck/#/15
 
+	OOP http://webdev.slides.com/eschoppik/deck-1/#/1
+		constructor functions are templates
+			function House (bedrooms, bathrooms, numSqft){
+				this.bedrooms = bedrooms;
+				this.bathrooms = bathrooms;
+				this.numSqft = numSqft;
+				// adds an implicit RETURN at the end of the function
+				// adds a property on the empty object __proto__
+					// that links the template to the new object
+			}
+
+			var firstHouse = new House(2, 2, 1000);
+	RECAP - http://webdev.slides.com/eschoppik/deck-1/#/13
 	
 
 
