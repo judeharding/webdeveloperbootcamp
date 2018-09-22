@@ -1195,7 +1195,9 @@ THIS keyword reserved
 		new keyword is a new object has a property __proto__
 
 		prototype chain
-		
+
+	CLOSURES
+	http://webdev.slides.com/eschoppik/deck-1-2-3-4/#/1
 
 
 
